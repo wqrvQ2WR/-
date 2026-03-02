@@ -13,9 +13,7 @@ while repeat :
     try :
         user = int(input("몇번째 데이터를 원하냐 닝겐: "))
         print(list1[user])
-        if user == 'q' :
-            repeat = False
     except ValueError :
-        pass
+        repeat = False
     except IndexError :
         pass
