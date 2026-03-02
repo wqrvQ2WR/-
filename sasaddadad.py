@@ -6,6 +6,9 @@ for i in range(len(log)) :
     print(log.iloc[i])
     list1.append(log.iloc[i])
 user = ""
-while user != ":q" :
-    user = int(input("몇번째 데이터를 원하냐 닝겐: "))
-    print(list1[user])
+try :
+    while user != "q" :
+        user = int(input("몇번째 데이터를 원하냐 닝겐: "))
+        print(list1[user])
+except ValueError :
+    pass
