@@ -14,6 +14,9 @@ while repeat :
         user = int(input("몇번째 데이터를 원하냐 닝겐: "))
         print(list1[user])
     except ValueError :
-        repeat = False
+        if user == 'q' :
+            sys.exit()
+        else :
+            pass
     except IndexError :
         pass
