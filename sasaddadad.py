@@ -8,14 +8,14 @@ for i in range(len(log)) :
     list1.append(log.iloc[i])
 user = ""
 
-while user != 'q' :
+repeat = True
+while repeat :
     try :
         user = int(input("몇번째 데이터를 원하냐 닝겐: "))
         print(list1[user])
         if user == 'q' :
-           sys.exit()
-        print(list1[user])
+            repeat = False
     except ValueError :
-            pass
+        pass
     except IndexError :
         pass
