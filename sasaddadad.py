@@ -14,6 +14,7 @@ while user != 'q' :
         print(list1[user])
         if user == 'q' :
            sys.exit()
+        print(list1[user])
     except ValueError :
             pass
     except IndexError :
