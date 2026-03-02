@@ -12,3 +12,5 @@ try :
         print(list1[user])
 except ValueError :
     pass
+except IndexError :
+    print("범위를 넘는 숫자임")
