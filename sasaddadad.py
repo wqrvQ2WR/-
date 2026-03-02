@@ -11,8 +11,9 @@ user = ""
 repeat = True
 while repeat :
     try :
-        user = int(input("몇번째 데이터를 원하냐 닝겐: "))
-        print(list1[user])
+        user = input("몇번째 데이터를 원하냐 닝겐: ")
+        userint = int(user)
+        print(list1[userint])
     except ValueError :
         if user == 'q' :
             sys.exit()
