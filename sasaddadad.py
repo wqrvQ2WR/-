@@ -1,4 +1,5 @@
 import pandas
+import sys
 
 list1 = []
 log = pandas.read_csv("C:\\Users\\우리가족\\Downloads\\microbit.csv")
@@ -7,11 +8,13 @@ for i in range(len(log)) :
     list1.append(log.iloc[i])
 user = ""
 
-while user != "q" :
+while user != 'q' :
     try :
         user = int(input("몇번째 데이터를 원하냐 닝겐: "))
         print(list1[user])
+        if user == 'q' :
+           sys.exit()
     except ValueError :
-        pass
+            pass
     except IndexError :
         pass
