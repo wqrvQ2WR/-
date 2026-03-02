@@ -6,11 +6,12 @@ for i in range(len(log)) :
     print(log.iloc[i])
     list1.append(log.iloc[i])
 user = ""
-try :
-    while user != "q" :
+
+while user != "q" :
+    try :
         user = int(input("몇번째 데이터를 원하냐 닝겐: "))
         print(list1[user])
-except ValueError :
-    pass
-except IndexError :
-    print("범위를 넘는 숫자임")
+    except ValueError :
+        pass
+    except IndexError :
+        pass
