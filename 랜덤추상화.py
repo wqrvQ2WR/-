@@ -3,7 +3,7 @@ import random
 
 turtle.hideturtle()
 turtle.speed(10)
-
+turtle.title("random picture")
 colors = ["red", "blue", "green", "purple", "orange", "black"]
 
 while True :
